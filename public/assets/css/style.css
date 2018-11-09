@@ -1,0 +1,65 @@
+/* blue: rgb(154, 191, 218); */
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1507750549272-e58742b1df80?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f46d65078fa593524cdd5451b32cfb62&auto=format&fit=crop&w=1050&q=80");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-family: "Spicy Rice", cursive;
+  color: white;
+}
+
+h2 {
+  font-family: "Spicy Rice", cursive;
+  color: RGB(222, 114, 156);
+}
+
+.jumbotron {
+  background-color: rgb(255, 255, 255, 0.5);
+  padding-top: 4%;
+  padding-bottom: 2%;
+  margin: 4%;
+  text-align: center;
+  align-content: center;
+}
+
+#title {
+  color: white;
+  background-color: RGB(222, 114, 156);
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li + li {
+  margin: 3%;
+}
+
+.card {
+  background-color: transparent;
+  border: transparent;
+}
+
+.radio {
+  margin: 0.5%;
+}
+
+.btn {
+  margin: 0.5%;
+}
+
+#newFlavor {
+  margin: 1%;
+}
+
+#addShake {
+  background-color: RGB(222, 114, 156);
+  border: RGB(222, 114, 156);
+  color: white;
+}

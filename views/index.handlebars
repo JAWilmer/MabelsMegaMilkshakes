@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="jumbotron" id="title">
+    <h1>Mabel's Mega Milkshakes</h1><br>
+    <p>Welcome to Mable's, home of the mega milkshake. We start with simply decadent milkshakes, then pile on even more
+      goodness. Simply scrumptious! We have listed our current and previous offerings. Did we miss your favorite
+      milkshake? Add it to our list. Is our list outdated? Please move or delete a flavor. And most of all... enjoy!</p>
+  </div>
+</div>
+</div>
+
+<div class="jumbotron">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <h2>Current Offerings</h2><br>
+        <ul>
+          {{#each shakes}}
+          {{#unless devoured}}
+          {{> shakes/shake-block consumed=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <h2>Blasts from the Past</h2><br>
+        <ul>
+          {{#each shakes}}
+          {{#if devoured}}
+          {{> shakes/shake-block consumed=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <form class="form">
+      <div class="form-group">
+        <label for="newFlavor">
+          <h2>Suggest a flavor!</h2>
+        </label>
+        <input type="text" id="newFlavor" name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="devoured">Is this suggestion for current or past offerings?</label>
+        <input type="radio" class="radio" name="devoured" value="0">Current
+        <input type="radio" class="radio" name="devoured" value="1" checked>Past
+      </div>
+      <button type="submit" class="btn" id="addShake">Add shake</button>
+
+
+    </form>
+  </div>
+</div>
