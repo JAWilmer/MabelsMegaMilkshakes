@@ -15,7 +15,7 @@ Mega Milkshakes is a full-stack web application that allows users to manipulate 
 
 **DEMO**
 
-_Mega Milkshakes_ is deployed to Heroku. Please [check it out](https://megamilkshakes.herokuapp.com/) on Heroku.
+_Mega Milkshakes_ is deployed to Heroku. Please [check it out](https://still-sierra-88234.herokuapp.com/) on Heroku.
 
 **SNEAK PEAK**
 
